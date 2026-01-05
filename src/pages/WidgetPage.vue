@@ -39,21 +39,21 @@ const variants = {
   },
   visible: {
     scale: 1,
-    height: 78,
+    height: 72,
     width: configStore.leaderboard ? 290 : 226,
     padding: configStore.leaderboard ? '0rem 0.5rem 0rem 0.8rem' : '0.5rem 1rem',
   },
   extended: {
     scale: 1,
-    height: 78,
+    height: 72,
     width: 290,
     padding: '1rem 1.5rem',
   },
   extendedExtra: {
     scale: 1,
-    height: 78,
-    width: 290,
-    padding: '1rem 1.5rem',
+    height: 72,
+    width: 272,
+    padding: '0.75rem',
   },
 }
 
@@ -139,7 +139,6 @@ onMounted(() => {
   display: flex;
   overflow: hidden;
   gap: 1rem;
-  border-radius: 2rem;
-  background: #000;
+  background: oklch(27.9% 0.041 260.031);
 }
 </style>

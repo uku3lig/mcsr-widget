@@ -137,8 +137,8 @@ onUnmounted(() => {
               'miminized-info__text--positive': eloChange > 0,
               'miminized-info__text--negative': eloChange < 0,
             }"
-            >{{ eloChangeFormatter(eloChange) }}<RowValue :value="changeRounded"
-          /></span>
+            >({{ eloChangeFormatter(eloChange) }}<RowValue :value="changeRounded" />)</span
+          >
         </div>
       </div>
 
@@ -179,29 +179,24 @@ onUnmounted(() => {
   justify-content: center;
   align-items: flex-start;
   gap: 0.25rem;
+  height: 100%;
 }
 .expanded-info-stats-block {
   display: flex;
   align-items: flex-start;
-  gap: 0.5rem;
+  gap: 0.3rem;
+  margin-top: 1px;
 }
 .expanded-info-stats__text {
-  color: #a4a4a9;
+  color: oklch(82.7% 0.119 306.383);
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 550;
   line-height: 1rem;
   letter-spacing: -0.01488rem;
 }
 .expanded-info-stats-leader {
   display: flex;
   align-items: flex-end;
-}
-.expanded-info-stats__hashtag {
-  color: #a4a4a9;
-  font-size: 0.875rem;
-  font-weight: 400;
-  line-height: 0.875rem;
-  letter-spacing: -0.01488rem;
 }
 .expanded-info-stats-rank {
   display: flex;
@@ -211,8 +206,8 @@ onUnmounted(() => {
 .expanded-info-stats-rank__text {
   color: #fff;
   font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 1.5rem;
+  font-weight: 650;
+  line-height: calc(1.5rem - 2px);
   letter-spacing: -0.01488rem;
 }
 .expanded-info-stats-rank__icon {
@@ -231,16 +226,16 @@ onUnmounted(() => {
 .miminized-info__text {
   color: #a4a4a9;
   text-align: center;
-  font-size: 1.5rem;
-  margin-left: 10px;
-  font-weight: 600;
-  line-height: 1.5rem;
+  font-size: 1.4rem;
+  margin-left: 2px;
+  font-weight: 650;
+  line-height: calc(1.5rem - 2px);
   letter-spacing: -0.01488rem;
 }
 .miminized-info__text--positive {
-  color: #37c058;
+  color: oklch(79.2% 0.209 151.711);
 }
 .miminized-info__text--negative {
-  color: #fa3532;
+  color: oklch(63.7% 0.237 25.331);
 }
 </style>
