@@ -131,15 +131,14 @@ onUnmounted(() => {
           />
           <span class="expanded-info-stats-rank__text"><RowValue :value="eloRounded" /> elo </span>
 
-      <span
-        class="miminized-info__text"
-        :class="{
-          'miminized-info__text--positive': eloChange > 0,
-          'miminized-info__text--negative': eloChange < 0,
-        }"
-        >{{ eloChangeFormatter(eloChange) }}<RowValue :value="changeRounded"
-      /></span>
-
+          <span
+            class="miminized-info__text"
+            :class="{
+              'miminized-info__text--positive': eloChange > 0,
+              'miminized-info__text--negative': eloChange < 0,
+            }"
+            >{{ eloChangeFormatter(eloChange) }}<RowValue :value="changeRounded"
+          /></span>
         </div>
       </div>
 
@@ -157,7 +156,6 @@ onUnmounted(() => {
         class="expanded-info__head"
       />
     </div>
-
   </div>
 </template>
 
