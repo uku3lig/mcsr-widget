@@ -151,7 +151,7 @@ onUnmounted(() => {
       <WinrateBadge v-if="badge === 2" :percentage="winrate" :accent="accent" />
       <img
         v-if="badge === 3"
-        :src="`https://mineskin.eu/helm/${nickname}/100.png`"
+        :src="`https://mineskin.eu/helm/${nickname}/7.png`"
         alt="player head"
         class="expanded-info__head"
       />
@@ -222,6 +222,7 @@ onUnmounted(() => {
   width: 3rem;
   height: 3rem;
   border-radius: 0.25rem;
+  image-rendering: crisp-edges;
 }
 .miminized-info__text {
   color: #a4a4a9;
