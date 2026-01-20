@@ -151,7 +151,7 @@ onUnmounted(() => {
       <WinrateBadge v-if="badge === 2" :percentage="winrate" :accent="accent" />
       <img
         v-if="badge === 3"
-        :src="`https://mineskin.eu/helm/${nickname}/7.png`"
+        :src="`https://mineskin.eu/helm/${nickname}/140.png`"
         alt="player head"
         class="expanded-info__head"
       />
